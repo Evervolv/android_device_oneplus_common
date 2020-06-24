@@ -7,3 +7,8 @@ hidl_package_root {
     name: "vendor.goodix.hardware",
     path: "device/oneplus/common/interfaces/goodix",
 }
+
+hidl_package_root {
+    name: "vendor.goodix.hardware",
+    path: "hardware/oneplus/interfaces/goodix",
+}
