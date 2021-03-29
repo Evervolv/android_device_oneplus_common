@@ -1,0 +1,7 @@
+vintf_compatibility_matrix {
+    name: "oneplus_compatibility_matrix.xml",
+    stem: "compatibility_matrix.oneplus.xml",
+    srcs: [
+        "vendor_framework_compatibility_matrix.xml",
+    ],
+}
