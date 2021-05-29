@@ -17,9 +17,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="org.lineageos.settings.device"
+          package="com.oneplus.settings"
           android:versionCode="7"
           android:versionName="2.4" >
+
+    <original-package android:name="org.lineageos.settings.device" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -27,7 +29,6 @@
     <uses-permission android:name="evervolv.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
 
     <uses-sdk
         android:minSdkVersion="24" />
@@ -41,7 +42,7 @@
 
         <provider
             android:name=".ConfigPanelSearchIndexablesProvider"
-            android:authorities="org.lineageos.settings.device"
+            android:authorities="com.oneplus.settings"
             android:multiprocess="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"
