@@ -23,7 +23,6 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/device_settings_app_name"
-        android:theme="@style/Theme.Main"
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">
 
@@ -52,6 +51,7 @@
         <activity
             android:name=".ButtonSettingsActivity"
             android:label="@string/button_panel_title"
+            android:theme="@style/Theme.SubSettingsBase"
             android:exported="false">
             <intent-filter>
                 <action android:name="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
