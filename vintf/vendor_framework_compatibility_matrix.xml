@@ -107,7 +107,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>vendor.oneplus.fingerprint.extension</name>
         <version>1.0</version>
         <interface>
@@ -147,7 +147,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>vendor.oneplus.hardware.display</name>
         <version>1.0</version>
         <interface>
@@ -203,7 +203,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>vendor.oneplus.hardware.param</name>
         <version>1.0</version>
         <interface>
