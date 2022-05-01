@@ -95,7 +95,10 @@ BiometricsFingerprint::~BiometricsFingerprint() {
 }
 
 Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
-    return true;
+    int sensor_version = -1;
+    std::ifstream file("/sys/devices/platform/soc/soc:fingerprint_detect/sensor_version");
+    file >> sensor_version;
+    return sensor_version != 0x3626;
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
@@ -286,6 +289,9 @@ const char* BiometricsFingerprint::getModuleId() {
     std::ifstream file("/sys/devices/platform/soc/soc:fingerprint_detect/sensor_version");
     file >> sensor_version;
     ALOGI("fp sensor version is: 0x%x", sensor_version);
+    if(sensor_version == 0x3626) {
+        return "goodix.3626";
+    }
     return sensor_version == 0x9638 ? "goodix.g6.fod" : "goodix.fod";
 }
 
