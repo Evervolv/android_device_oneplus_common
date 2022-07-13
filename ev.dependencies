@@ -1,0 +1,6 @@
+[
+ {
+    "repository": "android_vendor_oneplus",
+    "target_path": "vendor/oneplus"
+ }
+]
